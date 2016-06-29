@@ -12,7 +12,8 @@ export class InfiniteScroll implements OnDestroy, OnInit {
   @Input('infiniteScrollThrottle') _throttle: number = 3;
   @Input('scrollWindow') scrollWindow: boolean = true;
   @Input('immediateCheck') _immediate: boolean = false;
-
+  @Input('scrollWindowId') scrollWindowId: string = null;
+  
   @Output() scrolled = new EventEmitter();
   @Output() scrolledUp = new EventEmitter();
 
